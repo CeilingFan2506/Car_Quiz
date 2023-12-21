@@ -1,7 +1,7 @@
 import requests
 import base64
 def get_prediction(image_data):
-  url = 'https://askai.aiclub.world/ce326c5d-7454-48f6-81c0-73f2a1a771fa'
+  url = 'https://askai.aiclub.world/5c639127-bc1a-4891-9efa-b83136f034ee'
   r = requests.post(url, data=image_data)
   response = r.json()['predicted_label']
   print(response)
