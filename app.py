@@ -24,7 +24,4 @@ text = st.text_input("Give the correct answer")
 #settin the data
 input_data = {"sentence":text}
 #getting the respoense
-prediction = get_prediction(input_data)
-country = json.loads(json.loads(prediction)['body'])['prediction']
-
 
