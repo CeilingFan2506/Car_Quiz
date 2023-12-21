@@ -25,9 +25,6 @@ text = st.text_input("Give the correct answer")
 input_data = {"sentence":text}
 #getting the respoense
 prediction = get_prediction(input_data)
-country = json.loads(json.loads(prediction)['body'])['predicted_car']
+country = json.loads(json.loads(prediction)['body'])['prediction']
 
 
-#subheading
-if text:
-  st.subheader("Your Country is : {}".format(Country))
