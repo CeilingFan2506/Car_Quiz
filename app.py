@@ -25,8 +25,8 @@ text = st.text_input("Give the correct answer")
 input_data = {"sentence":text}
 #getting the respoense
 prediction = get_prediction(input_data)
-mood = json.loads(json.loads(prediction)['body'])['predicted_label']
+country = json.loads(json.loads(prediction)['body'])['predicted_label']
 
 #subheading
 if text:
-  st.subheader("Your Mood is : {}".format(mood))
+  st.subheader("Your Country is : {}".format(Country))
