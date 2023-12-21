@@ -27,6 +27,7 @@ input_data = {"sentence":text}
 prediction = get_prediction(input_data)
 country = json.loads(json.loads(prediction)['body'])['predicted_car']
 
+
 #subheading
 if text:
   st.subheader("Your Country is : {}".format(Country))
